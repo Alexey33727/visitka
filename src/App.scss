@@ -1,0 +1,409 @@
+@import url('https://fonts.cdnfonts.com/css/outfit');
+@import url('https://fonts.cdnfonts.com/css/public-sans');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  button {
+    cursor: pointer;
+  }
+
+  .App {
+
+    header {
+      position: fixed;
+      z-index: 3;
+      padding: 20px;
+      width: 100vw;
+      background: #1F2235;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+
+      .navlink {
+        font-family: 'Outfit';
+        color: #FFFFFF;
+        margin-right: 20px;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+
+      .navlink:hover {
+        color: #FE461C;
+        transition: 0.5s;
+      }
+
+      .dwn {
+        background-color: #FE461C;
+        color: #FFFFFF;
+        width: 160px;
+        padding: 10px 0;
+        border-radius: 3px;
+        border: none;
+        transition: 0.5s;
+        margin-right: 200px;
+      }
+
+      .dwn:hover {
+        background-color: #a73218;
+        transition: 0.5s;
+      }
+
+    }
+
+    .back {
+      background-color: #1F2235;
+      width: 100vw;
+      height: 100vh;
+
+      .contacts {
+
+        position: absolute;
+        top: 40%;
+        left: 3%;
+
+        .link {
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #2e2f3a;
+          border-radius: 5px;
+          width: 50px;
+          height: 50px;
+          margin-top: 10px;
+          color: #FFFFFF;
+          transition: 1s;
+        }
+
+        .link:hover {
+          color: #000;
+          transition: 1s;
+          background-color: #FFFFFF;
+          margin-left: 10px;
+        }
+      }
+
+
+      .blocks {
+        width: 80px;
+        height: 80px;
+        background-color: #0D0D0F;
+        border-radius: 15px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+      }
+
+      .f {
+        top: 33%;
+      }
+
+
+      .one {
+        left: 53%;
+        color: green;
+        z-index: 2;
+      }
+
+      .two {
+        z-index: 2;
+        left: 50%;
+        bottom: 22%;
+        color: rgb(124, 124, 255);
+      }
+
+      .three {
+        right: 10%;
+        color: #FE461C;
+      }
+
+      .four {
+        right: 5%;
+        bottom: 18%;
+        color: cornflowerblue;
+      }
+
+      .circle_one {
+        position: absolute;
+        top: 30%;
+        left: 16%;
+        width: 204px;
+        height: 204px;
+        border-radius: 50%;
+        background-color: #BBC5D3;
+        opacity: 0.08;
+      }
+
+      .circle_two {
+        position: absolute;
+        top: 30%;
+        left: 55%;
+        width: 634px;
+        height: 634px;
+        border-radius: 50%;
+        background-color: #171929;
+      }
+
+      .text {
+
+        position: absolute;
+        left: 20%;
+        top: 45%;
+        color: #FFFFFF;
+
+        .main_text {
+
+          font-family: 'Outfit';
+
+          span {
+
+            color: #FE461C;
+          }
+        }
+
+        .well {
+          font-family: 'Public Sans';
+        }
+
+        .quote {
+          width: 400px;
+          font-family: 'Public Sans';
+          font-weight: 100;
+        }
+
+        .hr {
+          background-color: #FE461C;
+          color: #FFFFFF;
+          width: 160px;
+          padding: 10px 0;
+          border-radius: 3px;
+          border: none;
+          margin-right: 10px;
+          margin-top: 29px;
+          transition: 0.5s;
+        }
+
+        .hr:hover {
+          background-color: #a73218;
+          transition: 0.5s;
+        }
+
+        .dwn {
+          background-color: transparent;
+          color: #FFFFFF;
+          width: 160px;
+          padding: 8px 0;
+          border-radius: 3px;
+          border: 2px solid #FFFFFF;
+          margin-right: 10px;
+          margin-top: 29px;
+          transition: 0.5s;
+        }
+
+        .dwn:hover {
+          color: #0D0D0F;
+          background-color: #FFFFFF;
+          font-weight: 700;
+          transition: 0.5s;
+        }
+      }
+
+    }
+
+    .About {
+      background: #24263B;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      h1 {
+        margin-top: 100px;
+        color: #FFFFFF;
+        font-family: 'Outfit';
+      }
+
+      .block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .text {
+          color: #FFFFFF;
+          font-family: 'Outfit';
+          margin-left: 100px;
+          margin-bottom: 70px;
+
+
+          h1 {
+            margin-bottom: 10px;
+          }
+
+          .bio {
+            font-family: 'Public Sans';
+            width: 400px;
+            word-wrap: break-word;
+          }
+
+          .tab {
+            margin-top: 20px;
+            display: flex;
+
+            p {
+              margin: 15px;
+
+              span {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .img_block {
+          width: 510px;
+          height: 450px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url('./img/png/Group\ \(1\).png');
+        }
+      }
+
+    }
+
+    .Portfolio {
+      height: 100vh;
+      width: 100vw;
+      background-color: #1F2235;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+
+      h1 {
+        font-family: 'Outfit';
+        text-align: center;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-family: 'Outfit';
+        text-align: center;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+        font-size: 40px;
+      }
+
+
+      .grid_Port {
+        display: grid;
+        width: 80%;
+        height: 70%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          'first second third'
+          'four second five'
+          'four six five';
+        gap: 10px;
+        margin-bottom: 100px;
+
+        img {
+          background-color: #BBC5D3;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .Service {
+      background-color: #24263B;
+      width: 100vw;
+      padding-top: 50px;
+      padding-bottom: 100px;
+
+      h1 {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'Outfit';
+      }
+
+      p {
+        font-family: 'Outfit';
+        text-align: center;
+        margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 40px;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        .card {
+          width: 15%;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #1F2235;
+
+          .h1 {
+            font-family: Outfit;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+
+          .text {
+            font-family: Public Sans;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+          }
+
+          ion-icon {
+            font-size: 60px;
+            color: #FE461C;
+          }
+
+          button {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            padding: 5px;
+            width: 35px;
+            height: 35px;
+            border: none;
+            border-radius: 50%;
+            background-color: #282a38;
+            color: #FFFFFF;
+            box-shadow: 0px 0px 14px 0px #4141446b;
+            transition: 0.5s;
+
+            ion-icon {
+              color: #FFFFFF;
+              height: 35px;
+            }
+          }
+          button:hover {
+            background-color: #FE461C;
+            box-shadow: 0px 0px 14px 0px #FE461C;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
