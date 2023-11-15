@@ -1,15 +1,42 @@
 @import url('https://fonts.cdnfonts.com/css/outfit');
 @import url('https://fonts.cdnfonts.com/css/public-sans');
 
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2e2f3a;
+  /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #171929;
+  /* цвет плашки */
+  border-radius: 20px;
+  /* закругления плашки */
+  border: none;
+  /* padding вокруг плашки */
+}
+
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+
+  h1 {
+    overflow-y: hidden;
+  }
+
 
   button {
     cursor: pointer;
   }
 
   .App {
+
 
     header {
       position: fixed;
@@ -18,16 +45,25 @@
       width: 100vw;
       background: #1F2235;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: center;
+
+      // @media screen and (max-width: 480px) {
+      //   width: 480px;
+      // }
 
 
       .navlink {
         font-family: 'Outfit';
         color: #FFFFFF;
         margin-right: 20px;
+        margin-bottom: 0;
         text-decoration: none;
         transition: 0.5s;
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+          margin-right: 10px;
+        }
       }
 
       .navlink:hover {
@@ -44,6 +80,11 @@
         border: none;
         transition: 0.5s;
         margin-right: 200px;
+        @media screen and (max-width: 480px) {
+          margin-right: 20px;
+          font-size: 12px;
+          width: 100px;
+        }
       }
 
       .dwn:hover {
@@ -128,6 +169,7 @@
         color: cornflowerblue;
       }
 
+
       .circle_one {
         position: absolute;
         top: 30%;
@@ -150,7 +192,7 @@
       }
 
       .text {
-
+        width: 40%;
         position: absolute;
         left: 20%;
         top: 45%;
@@ -213,6 +255,42 @@
         }
       }
 
+      @media screen and (max-width: 480px) {
+        .blocks {
+          display: none;
+        }
+
+        .three {
+          display: flex;
+        }
+
+        .two {
+          display: flex;
+          left: 10%;
+          bottom: 10%;
+        }
+
+        .text {
+          left: 10%;
+          width: 470px;
+
+          h1 {
+            width: 470px;
+          }
+        }
+
+        .circle_two {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          left: 35%;
+          top: 60%;
+        }
+
+        .contacts {
+          display: none;
+        }
+      }
     }
 
     .About {
@@ -226,6 +304,9 @@
         margin-top: 100px;
         color: #FFFFFF;
         font-family: 'Outfit';
+        @media screen and (max-width: 480px) {
+          margin-top: 20px;
+        }
       }
 
       .block {
@@ -239,6 +320,9 @@
           font-family: 'Outfit';
           margin-left: 100px;
           margin-bottom: 70px;
+          @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
+          }
 
 
           h1 {
@@ -263,6 +347,10 @@
               }
             }
           }
+
+          @media screen and (max-width: 480px) {
+            margin-left: 7%;
+          }
         }
 
         .img_block {
@@ -271,6 +359,16 @@
           background-repeat: no-repeat;
           background-size: cover;
           background-image: url('./img/png/Group\ \(1\).png');
+
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .block {
+          flex-direction: column;
         }
       }
 
@@ -284,12 +382,24 @@
       flex-direction: column;
       align-items: center;
       justify-content: end;
+      @media screen and (max-width: 480px) {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .size {
+        display: none;
+        width: 90%;
+        height: 33%;
+      }
 
       h1 {
         font-family: 'Outfit';
         text-align: center;
         margin-bottom: 20px;
         color: #FFFFFF;
+        overflow-y: hidden;
       }
 
       p {
@@ -319,6 +429,16 @@
           border-radius: 10px;
         }
       }
+
+      @media screen and (max-width: 480px) {
+        .size {
+          display: block;
+        }
+
+        .grid_Port {
+          display: none;
+        }
+      }
     }
 
     .Service {
@@ -331,6 +451,7 @@
         text-align: center;
         color: #FFFFFF;
         font-family: 'Outfit';
+        overflow-y: hidden;
       }
 
       p {
@@ -345,15 +466,18 @@
         display: flex;
         justify-content: space-evenly;
         margin-top: 50px;
-        
+
         .card {
           width: 15%;
           padding: 20px;
           border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           background-color: #1F2235;
 
           .h1 {
-            font-family: Outfit;
+            font-family: 'Outfit';
             font-size: 20px;
             font-weight: 600;
             line-height: 25px;
@@ -391,16 +515,178 @@
             color: #FFFFFF;
             box-shadow: 0px 0px 14px 0px #4141446b;
             transition: 0.5s;
+            overflow: hidden;
 
             ion-icon {
               color: #FFFFFF;
               height: 35px;
             }
           }
+
           button:hover {
             background-color: #FE461C;
             box-shadow: 0px 0px 14px 0px #FE461C;
             transition: 0.5s;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          flex-direction: column;
+          align-items: center;
+
+          .card {
+            width: 80%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    .Resume {
+
+      // height: 100vh;
+      width: 100vw;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #1F2235;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      .img_block {
+        width: 510px;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('./img/png/Group\ \(1\).png');
+        margin-left: 100px;
+      }
+
+      @media screen and (max-width: 480px) {
+        .img_block {
+          display: none;
+        }
+      }
+
+
+      .sec {
+
+        display: flex;
+        flex-direction: column;
+
+        .h1 {
+          text-align: left;
+          color: #FFFFFF;
+          font-family: 'Outfit';
+          overflow-y: hidden;
+        }
+
+        .p {
+          font-family: 'Outfit';
+          text-align: left;
+          margin-top: 10px;
+          color: #FFFFFF;
+          font-size: 40px;
+        }
+
+        .block {
+          width: 400px;
+
+          .text {
+            color: #FFFFFF;
+            font-family: 'Outfit';
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+
+          .proc {
+
+            width: 400px;
+            height: 15px;
+            background-color: #FFFFFF;
+            border-radius: 7.5px;
+            margin-bottom: 30px;
+
+            .line {
+              display: block;
+              background-color: #FE461C;
+              width: 90%;
+              height: 15px;
+              border-radius: 7.5px;
+
+            }
+          }
+        }
+
+      }
+    }
+
+    .Contact {
+      padding-top: 50px;
+      background-color: #24263B;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      .cards {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 480px) {
+          flex-direction: column;
+        }
+
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          border-radius: 10px;
+          margin: 50px;
+          margin-top: 20px;
+          border: 2px solid #FFFFFF33;
+          background-color: rgba(39, 30, 30, 0.2);
+          flex-direction: row;
+          color: #FFFFFF;
+
+          .text {
+            color: #FFFFFF;
+
+
+            p {
+              font-family: Public Sans;
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+
+            .h1 {
+              font-family: 'Outfit';
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 30px;
+              text-align: left;
+            }
+          }
+
+          .ico {
+            background: #24263B;
+            box-shadow: 0px 0px 24px 0px #0F10186B;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
           }
         }
       }
