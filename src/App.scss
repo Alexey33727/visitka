@@ -1,6 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/outfit');
 @import url('https://fonts.cdnfonts.com/css/public-sans');
 
+// 870 650
+
 
 body::-webkit-scrollbar {
   width: 12px;
@@ -60,7 +62,8 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 0;
         text-decoration: none;
         transition: 0.5s;
-        @media screen and (max-width: 480px) {
+
+        @media screen and (max-width: 650px) {
           font-size: 12px;
           margin-right: 10px;
         }
@@ -80,7 +83,14 @@ body::-webkit-scrollbar-thumb {
         border: none;
         transition: 0.5s;
         margin-right: 200px;
+
         @media screen and (max-width: 480px) {
+          margin-right: 20px;
+          font-size: 12px;
+          width: 100px;
+        }
+
+        @media screen and (max-width: 1000px) {
           margin-right: 20px;
           font-size: 12px;
           width: 100px;
@@ -140,15 +150,15 @@ body::-webkit-scrollbar-thumb {
         font-size: 60px;
       }
 
-      .f {
-        top: 33%;
-      }
-
-
       .one {
         left: 53%;
+        top: 33%;
         color: green;
         z-index: 2;
+
+        @media screen and (max-width: 1279px) {
+          left: 43%;
+        }
       }
 
       .two {
@@ -156,17 +166,31 @@ body::-webkit-scrollbar-thumb {
         left: 50%;
         bottom: 22%;
         color: rgb(124, 124, 255);
+
+        @media screen and (max-width: 1279px) {
+          bottom: 6%;
+          left: 43%;
+        }
       }
 
       .three {
         right: 10%;
+        top: 33%;
         color: #FE461C;
+
+        @media screen and (max-width: 1279px) {
+          display: none;
+        }
       }
 
       .four {
         right: 5%;
         bottom: 18%;
         color: cornflowerblue;
+
+        @media screen and (max-width: 1279px) {
+          display: none;
+        }
       }
 
 
@@ -189,10 +213,18 @@ body::-webkit-scrollbar-thumb {
         height: 634px;
         border-radius: 50%;
         background-color: #171929;
+
+        @media screen and (max-width: 1279px) {
+          left: 50%;
+          top: 40%;
+          width: 434px;
+          height: 434px;
+        }
+
       }
 
       .text {
-        width: 40%;
+        width: 430px;
         position: absolute;
         left: 20%;
         top: 45%;
@@ -253,6 +285,54 @@ body::-webkit-scrollbar-thumb {
           font-weight: 700;
           transition: 0.5s;
         }
+
+        @media screen and (max-width: 650px) {
+
+          .main_text {
+            width: 430px;
+          }
+          .well {
+            width: 430px;
+          }
+
+        }
+      }
+
+      @media screen and (max-width: 870px) {
+        .blocks {
+          display: none;
+        }
+
+        .three {
+          display: flex;
+        }
+
+        .two {
+          display: flex;
+          left: 10%;
+          bottom: 10%;
+        }
+
+        .text {
+          left: 15%;
+          width: 430px;
+
+          h1 {
+            width: 470px;
+          }
+        }
+
+        .circle_two {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          left: 35%;
+          top: 60%;
+        }
+
+        .contacts {
+          display: none;
+        }
       }
 
       @media screen and (max-width: 480px) {
@@ -272,10 +352,10 @@ body::-webkit-scrollbar-thumb {
 
         .text {
           left: 10%;
-          width: 470px;
+          width: 430px;
 
           h1 {
-            width: 470px;
+            width: 430px;
           }
         }
 
@@ -304,6 +384,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 100px;
         color: #FFFFFF;
         font-family: 'Outfit';
+
         @media screen and (max-width: 480px) {
           margin-top: 20px;
         }
@@ -320,6 +401,7 @@ body::-webkit-scrollbar-thumb {
           font-family: 'Outfit';
           margin-left: 100px;
           margin-bottom: 70px;
+
           @media screen and (max-width: 480px) {
             margin-bottom: 20px;
           }
@@ -363,6 +445,10 @@ body::-webkit-scrollbar-thumb {
           @media screen and (max-width: 480px) {
             display: none;
           }
+
+          @media screen and (max-width: 1000px) {
+            display: none;
+          }
         }
       }
 
@@ -382,7 +468,8 @@ body::-webkit-scrollbar-thumb {
       flex-direction: column;
       align-items: center;
       justify-content: end;
-      @media screen and (max-width: 480px) {
+
+      @media screen and (max-width: 650px) {
         height: auto;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -391,7 +478,7 @@ body::-webkit-scrollbar-thumb {
       .size {
         display: none;
         width: 90%;
-        height: 33%;
+        height: auto;
       }
 
       h1 {
@@ -428,6 +515,10 @@ body::-webkit-scrollbar-thumb {
           background-color: #BBC5D3;
           border-radius: 10px;
         }
+
+        @media screen and (max-width: 650px) {
+          display: none;
+        }
       }
 
       @media screen and (max-width: 480px) {
@@ -437,6 +528,12 @@ body::-webkit-scrollbar-thumb {
 
         .grid_Port {
           display: none;
+        }
+      }
+
+      @media screen and (max-width: 650px) {
+        .size {
+          display: block;
         }
       }
     }
@@ -465,6 +562,7 @@ body::-webkit-scrollbar-thumb {
       .flex {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         margin-top: 50px;
 
         .card {
@@ -475,6 +573,20 @@ body::-webkit-scrollbar-thumb {
           flex-direction: column;
           justify-content: space-between;
           background-color: #1F2235;
+
+          @media screen and (max-width: 1279px) {
+            width: 22%;
+          }
+
+          @media screen and (max-width: 1000px) {
+            width: 40%;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+          }
+
+          @media screen and (max-width: 650px) {
+            width: 70%;
+          }
 
           .h1 {
             font-family: 'Outfit';
@@ -561,6 +673,10 @@ body::-webkit-scrollbar-thumb {
         background-size: cover;
         background-image: url('./img/png/Group\ \(1\).png');
         margin-left: 100px;
+
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
       }
 
       @media screen and (max-width: 480px) {
@@ -636,7 +752,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         justify-content: center;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 650px) {
           flex-direction: column;
         }
 
@@ -658,7 +774,7 @@ body::-webkit-scrollbar-thumb {
 
 
             p {
-              font-family: Public Sans;
+              font-family: 'Public Sans';
               font-size: 16px;
               font-weight: 300;
               line-height: 24px;
