@@ -155,10 +155,15 @@ body::-webkit-scrollbar-thumb {
         top: 33%;
         color: green;
         z-index: 2;
+        @media screen and (max-width: 1412px) {
+          left: 42%;
+          top: 30%;
+        }
 
         @media screen and (max-width: 1279px) {
           left: 43%;
         }
+        
       }
 
       .two {
@@ -166,31 +171,44 @@ body::-webkit-scrollbar-thumb {
         left: 50%;
         bottom: 22%;
         color: rgb(124, 124, 255);
+        @media screen and (max-width: 1412px) {
+          bottom: 8%;
+          left: 40%;
+        }
 
         @media screen and (max-width: 1279px) {
           bottom: 6%;
           left: 43%;
         }
+        
       }
 
       .three {
         right: 10%;
         top: 33%;
         color: #FE461C;
+        @media screen and (max-width: 1412px) {
+          top: 25%;
+        }
 
         @media screen and (max-width: 1279px) {
           display: none;
         }
+        
       }
 
       .four {
         right: 5%;
         bottom: 18%;
         color: cornflowerblue;
+        @media screen and (max-width: 1412px) {
+          bottom: 10%;
+        }
 
         @media screen and (max-width: 1279px) {
           display: none;
         }
+        
       }
 
 
@@ -213,6 +231,10 @@ body::-webkit-scrollbar-thumb {
         height: 634px;
         border-radius: 50%;
         background-color: #171929;
+        @media screen and (max-width: 1412px) {
+          left: 45%;
+          top: 23%;
+        }
 
         @media screen and (max-width: 1279px) {
           left: 50%;
@@ -220,11 +242,12 @@ body::-webkit-scrollbar-thumb {
           width: 434px;
           height: 434px;
         }
+        
 
       }
 
       .text {
-        width: 430px;
+        width: 510px;
         position: absolute;
         left: 20%;
         top: 45%;
