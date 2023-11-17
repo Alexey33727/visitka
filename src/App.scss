@@ -151,7 +151,7 @@ body::-webkit-scrollbar-thumb {
       }
 
       .one {
-        left: 53%;
+        left: 42%;
         top: 33%;
         color: green;
         z-index: 2;
@@ -168,7 +168,7 @@ body::-webkit-scrollbar-thumb {
 
       .two {
         z-index: 2;
-        left: 50%;
+        left: 45%;
         bottom: 22%;
         color: rgb(124, 124, 255);
         @media screen and (max-width: 1412px) {
@@ -184,8 +184,8 @@ body::-webkit-scrollbar-thumb {
       }
 
       .three {
-        right: 10%;
-        top: 33%;
+        right: 3%;
+        top: 25%;
         color: #FE461C;
         @media screen and (max-width: 1412px) {
           top: 25%;
@@ -198,7 +198,7 @@ body::-webkit-scrollbar-thumb {
       }
 
       .four {
-        right: 5%;
+        right: 1%;
         bottom: 18%;
         color: cornflowerblue;
         @media screen and (max-width: 1412px) {
@@ -225,8 +225,8 @@ body::-webkit-scrollbar-thumb {
 
       .circle_two {
         position: absolute;
-        top: 30%;
-        left: 55%;
+        top: 20%;
+        left: 50%;
         width: 634px;
         height: 634px;
         border-radius: 50%;
@@ -589,7 +589,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 50px;
 
         .card {
-          width: 15%;
+          width: 22%;
           padding: 20px;
           border-radius: 10px;
           display: flex;
